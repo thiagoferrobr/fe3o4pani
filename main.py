@@ -156,7 +156,7 @@ def sensitivity_index(f_vals, p_vals):
 def make_fig1():
     """
     Eigenvalue trajectories in the complex plane as H_M varies.
-    Shows subcritical (complex), bifurcation (H_M = H_D), and
+    Shows subcritical (complex), transition (H_M = H_D), and
     supercritical (real) regimes.
     """
     HM_arr  = np.linspace(0.005, 3.0 * HMC, 3000)
@@ -545,8 +545,8 @@ DHO STABILITY ANALYSIS – SUMMARY REPORT  (VI ERMAC-BA 2026)
    Oscillation frequency: controlled exclusively by H_M
    Decay rate:            controlled exclusively by H_D
 
- BIFURCATION POINT
-   H_M_c = H_D = {HMC:.1f} Oe  (focus–node bifurcation)
+ CRITICAL POINT
+   H_M_c = H_D = {HMC:.1f} Oe  (focus–node transition)
    For H_M > {HMC:.1f} Oe → monotone decay (overdamped)
 
 ════════════════════════════════════════════════════════════════════
